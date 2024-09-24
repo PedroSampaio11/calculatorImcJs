@@ -103,7 +103,10 @@ function showOrHideResults() {
 createTable(data);
 
 // Eventos
-[heightInput, weightInput].forEach((el) => {
+
+const inputsArray = [heightInput, weightInput];
+
+inputsArray.forEach((el) => {
   el.addEventListener("input", (e) => {
     const updatedValue = validDigits(e.target.value);
 
